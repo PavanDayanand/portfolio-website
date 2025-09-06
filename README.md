@@ -1,6 +1,5 @@
 # Portfolio Website
 
-![Netlify Status](https://img.shields.io/badge/Deployed%20on-Netlify-brightgreen)
 ![GitHub last commit](https://img.shields.io/github/last-commit/PavanDayanand/portfolio-website)
 ![GitHub stars](https://img.shields.io/github/stars/PavanDayanand/portfolio-website?style=social)
 ![License](https://img.shields.io/badge/license-MIT-green)
