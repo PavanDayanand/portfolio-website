@@ -1,8 +1,15 @@
 # Portfolio Website
 
+![Netlify Status](https://img.shields.io/badge/Deployed%20on-Netlify-brightgreen)
+![GitHub last commit](https://img.shields.io/github/last-commit/PavanDayanand/portfolio-website)
+![GitHub stars](https://img.shields.io/github/stars/PavanDayanand/portfolio-website?style=social)
+![License](https://img.shields.io/badge/license-MIT-green)
+
 A personal portfolio website to showcase my skills, projects, achievements, and experience in Data Science, AI, and Web Development.
 
-## Features
+---
+
+## ✨ Features
 
 - Responsive Design – Works on all devices
 - Dark/Light Theme Toggle – Save user preference
@@ -11,29 +18,48 @@ A personal portfolio website to showcase my skills, projects, achievements, and 
 - Downloadable Resume – One-click resume download
 - Contact Form with EmailJS Integration – Direct messaging feature
 
-## Tech Stack
+---
 
-- HTML5
-- CSS3 (Custom + modern design)
-- JavaScript
+## 🛠 Tech Stack
 
-## Live Demo
+- **HTML5**
+- **CSS3** (Custom + modern design)
+- **JavaScript**
 
-https://pavan-d.netlify.app/
+---
 
-## How to Run Locally
+## 🌐 Live Demo
+
+[View Portfolio](https://pavan-d.netlify.app/)
+
+---
+
+## 📷 Screenshots
+
+_(Add your website screenshots here in the future for a better look)_  
+Example:
+
+```
+![Homepage Screenshot](assets/screenshot-home.png)
+```
+
+---
+
+## 🚀 How to Run Locally
 
 1. Clone this repository:
+   ```bash
    git clone https://github.com/PavanDayanand/portfolio-website.git
-
+   ```
 2. Navigate to the project folder:
+   ```bash
    cd portfolio-website
-
+   ```
 3. Open `index.html` in your browser.
 
-## Folder Structure
+---
 
-## Folder Structure
+## 📂 Folder Structure
 
 ```
 portfolio-website/
@@ -47,7 +73,18 @@ portfolio-website/
 └── README.md        # Project description
 ```
 
-## Contact
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.  
+Feel free to use and modify it for your own portfolio.
+
+---
+
+## 👤 Contact
 
 Created by **Pavan D**  
 [GitHub](https://github.com/PavanDayanand) | [Portfolio](https://pavan-d.netlify.app/)
+
+---
