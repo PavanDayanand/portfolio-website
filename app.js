@@ -376,51 +376,52 @@ function initContactForm(elements) {
     });
 }
 
-// Fixed Navigation Spy
-function initScrollSpy(elements) {
-    if (elements.sections.length === 0 || elements.navLinks.length === 0) return;
+// // Fixed Navigation Spy
+// function initScrollSpy(elements) {
+//     if (elements.sections.length === 0 || elements.navLinks.length === 0) return;
     
-    const observerOptions = {
-        rootMargin: '-20% 0px -70% 0px',
-        threshold: 0.1
-    };
+//     const observerOptions = {
+//         rootMargin: '-20% 0px -70% 0px',
+//         threshold: 0.1
+//     };
     
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            const sectionId = entry.target.getAttribute('id');
-            const navLink = document.querySelector(`.nav-link[href="#${sectionId}"]`);
+//     const observer = new IntersectionObserver((entries) => {
+//         entries.forEach(entry => {
+//             const sectionId = entry.target.getAttribute('id');
+//             const navLink = document.querySelector(`.nav-link[href="#${sectionId}"]`);
             
-            if (entry.isIntersecting && navLink) {
-                elements.navLinks.forEach(link => link.classList.remove('active'));
-                navLink.classList.add('active');
-            }
-        });
-    }, observerOptions);
+//             if (entry.isIntersecting && navLink) {
+//                 elements.navLinks.forEach(link => link.classList.remove('active'));
+//                 navLink.classList.add('active');
+//             }
+//         });
+//     }, observerOptions);
     
-    elements.sections.forEach(section => observer.observe(section));
+//     elements.sections.forEach(section => observer.observe(section));
     
-    window.addEventListener('scroll', throttle(() => {
-        const scrollPosition = window.scrollY + 100;
+//     window.addEventListener('scroll', throttle(() => {
+//         const scrollPosition = window.scrollY + 100;
         
-        elements.sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.offsetHeight;
-            const sectionId = section.getAttribute('id');
-            const navLink = document.querySelector(`.nav-link[href="#${sectionId}"]`);
+//         elements.sections.forEach(section => {
+//             const sectionTop = section.offsetTop;
+//             const sectionHeight = section.offsetHeight;
+//             const sectionId = section.getAttribute('id');
+//             const navLink = document.querySelector(`.nav-link[href="#${sectionId}"]`);
             
-            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight && navLink) {
-                elements.navLinks.forEach(link => link.classList.remove('active'));
-                navLink.classList.add('active');
-            }
-        });
-    }, 100));
-}
+//             if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight && navLink) {
+//                 elements.navLinks.forEach(link => link.classList.remove('active'));
+//                 navLink.classList.add('active');
+//             }
+//         });
+//     }, 100));
+// }
 
 // Navbar Scroll Effect
 function initNavbarScroll(elements) {
     if (!elements.navbar) return;
     
-    let lastScrollTop = 0;
+    let lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
     const handleScroll = () => {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         
@@ -432,13 +433,12 @@ function initNavbarScroll(elements) {
         
         if (window.innerWidth <= 768) {
             if (scrollTop > lastScrollTop && scrollTop > 200) {
-                elements.navbar.style.transform = 'translateY(-100%)';
+                elements.navbar.classList.add('nav-hidden');
             } else {
-                elements.navbar.style.transform = 'translateY(0)';
+                elements.navbar.classList.remove('nav-hidden');
             }
-        } else {
-            elements.navbar.style.transform = 'translateY(0)';
         }
+        
         lastScrollTop = scrollTop;
     };
     
@@ -478,7 +478,7 @@ const optimizedResizeHandler = (elements) => {
             elements.navToggle.classList.remove('active');
         }
         if (elements.navbar) {
-            elements.navbar.style.transform = 'translateY(0)';
+            elements.navbar.classList.remove('nav-hidden');
         }
     }
 };
@@ -681,7 +681,7 @@ window.scrollToSection = (sectionId) => {
 
 // Add ripple effect to buttons
 document.addEventListener('DOMContentLoaded', function() {
-    const buttons = document.querySelectorAll('.btn');
+    const buttons = document.querySelectorAll('.btn-ripple');
     buttons.forEach(button => {
         button.addEventListener('click', function(e) {
             const ripple = document.createElement('span');

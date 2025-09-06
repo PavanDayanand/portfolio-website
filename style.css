@@ -499,6 +499,10 @@ pre code {
   cursor: not-allowed;
 }
 
+.navbar.nav-hidden {
+  transform: translateY(-100%);
+}
+
 /* Form elements */
 .form-control {
   display: block;
@@ -963,15 +967,6 @@ body {
   backdrop-filter: blur(10px);
   box-shadow: 0 4px 15px rgba(2, 85, 205, 0.2);
   border-radius: var(--radius-full);
-}
-
-.nav-link.active {
-  color: var(--color-primary);
-  background: rgba(2, 85, 205, 0.15);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 15px rgba(2, 85, 205, 0.25);
-  border-radius: var(--radius-full);
-  border: 2px solid rgba(2, 85, 205, 0.3);
 }
 
 .theme-toggle {
