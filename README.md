@@ -37,7 +37,10 @@ portfolio-website/
 │── index.html # Main HTML file
 │── style.css # Stylesheet
 │── app.js # JavaScript functionality
-│── assets/ # Images, favicon, and resume
+│── assets/ # Favicon and resume
+│ ├── favicon-pd.svg
+│ ├── favicon.svg
+│ └── Pavan_D.pdf
 └── README.md # Project description
 
 ## Contact
