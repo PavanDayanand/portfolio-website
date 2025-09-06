@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="assets/favicon.png" sizes="32x32">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pavan D - Data Scientist & AI Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="background-layer"></div>
+
+    <div class="loading-screen" id="loading-screen">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <p>Loading Portfolio...</p>
+        </div>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="nav-logo">PAVAN</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon" id="theme-icon"></i>
+                </button>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- <div class="floating-orbs">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div> -->
+    <!-- <div id="particles-container"></div> -->
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text">PAVAN</span>
+                </h1>
+                <div class="hero-subtitle">
+                    I'm a <span class="typed-text" id="typed-text"></span><span class="cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    Passionate Computer Science student specializing in Data Science with expertise in Machine Learning, Generative AI, and Full-Stack Development. Currently pursuing my degree at Bangalore Institute of Technology with a strong foundation in Python, data analysis, and modern web technologies.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn--primary btn--lg">Get In Touch</a>
+                    <a href="#projects" class="btn btn--outline btn--lg">View Work</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+            <div class="about-content">
+                <div class="about-card glass">
+                    <div class="about-info">
+                        <h3>Computer Science Student & Tech Enthusiast</h3>
+                        <p>Currently pursuing my degree at Bangalore Institute of Technology with a strong foundation in Python, data analysis, and modern web technologies. I'm passionate about leveraging technology to solve real-world problems through data science and AI.</p>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="stat-details">
+                                    <span class="stat-number" data-target="8.44">0</span>
+                                    <span class="stat-label">CGPA</span>
+                                </div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-icon">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                                <div class="stat-details">
+                                    <span class="stat-number" data-target="4">0</span>
+                                    <span class="stat-label">Awards Won</span>
+                                </div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-icon">
+                                    <i class="fas fa-project-diagram"></i>
+                                </div>
+                                <div class="stat-details">
+                                    <span class="stat-number" data-target="4">0</span>
+                                    <span class="stat-label">Major Projects</span>
+                                </div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-icon">
+                                    <i class="fas fa-certificate"></i>
+                                </div>
+                                <div class="stat-details">
+                                    <span class="stat-number" data-target="1">0</span>
+                                    <span class="stat-label">Certifications</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <p class="section-subtitle">My academic journey</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-university"></i>
+                    </div>
+                    <div class="timeline-content glass">
+                        <div class="timeline-date">December 2022 – Present</div>
+                        <h3>Computer Science and Engineering (Data Science)</h3>
+                        <p class="institution">Bangalore Institute of Technology - VV Puram</p>
+                        <p class="location">Bangalore, India</p>
+                        <div class="grade">CGPA: 8.44/10</div>
+                        <p class="description">Specializing in Data Science with focus on Machine Learning and AI applications</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="timeline-content glass">
+                        <div class="timeline-date">June 2020 – July 2022</div>
+                        <h3>Pre-University Course (PCMB)</h3>
+                        <p class="institution">Deeksha CFL PU College</p>
+                        <p class="location">Bangalore, India</p>
+                        <div class="grade">Percentage: 65%</div>
+                        <p class="description">Physics, Chemistry, Mathematics, and Biology with focus on analytical thinking</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Technologies</h2>
+                <p class="section-subtitle">Technologies I work with</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Programming Languages</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <a href="https://www.python.org/" target="_blank" class="skill-tag clickable" data-tooltip="Click for details">
+                            <i class="fab fa-python"></i> Python
+                        </a>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-cogs"></i>
+                        <h3>Data Preprocessing</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <a href="https://en.wikipedia.org/wiki/Feature_engineering" target="_blank" class="skill-tag clickable" data-tooltip="Click for details">
+                            <i class="fas fa-wrench"></i> Feature Engineering
+                        </a>
+                        <a href="https://en.wikipedia.org/wiki/Data_processing" target="_blank" class="skill-tag clickable" data-tooltip="Click for details">
+                            <i class="fas fa-database"></i> Data Processing
+                        </a>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-brain"></i>
+                        <h3>Machine Learning & AI</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <a href="https://en.wikipedia.org/wiki/Supervised_learning" target="_blank" class="skill-tag clickable" data-tooltip="Click for details">
+                            <i class="fas fa-robot"></i> Supervised Learning
+                        </a>
+                        <a href="https://en.wikipedia.org/wiki/Unsupervised_learning" target="_blank" class="skill-tag clickable" data-tooltip="Click for details">
+                            <i class="fas fa-network-wired"></i> Unsupervised Learning
+                        </a>
+                        <a href="https://en.wikipedia.org/wiki/Reinforcement_learning" target="_blank" class="skill-tag clickable" data-tooltip="Click for details">
+                            <i class="fas fa-gamepad"></i> Reinforcement Learning
+                        </a>
+                        <a href="https://en.wikipedia.org/wiki/Generative_artificial_intelligence" target="_blank" class="skill-tag clickable" data-tooltip="Click for details">
+                            <i class="fas fa-magic"></i> Generative AI
+                        </a>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-layer-group"></i>
+                        <h3>AI Tools & Libraries</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <a href="https://numpy.org/" target="_blank" class="skill-tag clickable" data-tooltip="Click for details">
+                            <i class="fas fa-calculator"></i> NumPy
+                        </a>
+                        <a href="https://pandas.pydata.org/" target="_blank" class="skill-tag clickable" data-tooltip="Click for details">
+                            <i class="fas fa-table"></i> Pandas
+                        </a>
+                        <a href="https://matplotlib.org/" target="_blank" class="skill-tag clickable" data-tooltip="Click for details">
+                            <i class="fas fa-chart-bar"></i> Matplotlib
+                        </a>
+                        <a href="https://scikit-learn.org/" target="_blank" class="skill-tag clickable" data-tooltip="Click for details">
+                            <i class="fas fa-cogs"></i> Scikit-learn
+                        </a>
+                        <a href="https://en.wikipedia.org/wiki/Random_forest" target="_blank" class="skill-tag clickable" data-tooltip="Click for details">
+                            <i class="fas fa-tree"></i> Random Forest
+                        </a>
+                        <a href="https://en.wikipedia.org/wiki/Convolutional_neural_network" target="_blank" class="skill-tag clickable" data-tooltip="Click for details">
+                            <i class="fas fa-brain"></i> CNN
+                        </a>
+                        <a href="https://en.wikipedia.org/wiki/Large_language_model" target="_blank" class="skill-tag clickable" data-tooltip="Click for details">
+                            <i class="fas fa-comments"></i> LLMs
+                        </a>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-chart-bar"></i>
+                        <h3>Data Science</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <a href="https://en.wikipedia.org/wiki/Exploratory_data_analysis" target="_blank" class="skill-tag clickable" data-tooltip="Click for details">
+                            <i class="fas fa-search"></i> EDA
+                        </a>
+                        <a href="https://www.mysql.com/" target="_blank" class="skill-tag clickable" data-tooltip="Click for details">
+                            <i class="fas fa-database"></i> SQL(MySQL)
+                        </a>
+                        <a href="https://www.microsoft.com/en-us/microsoft-365/excel" target="_blank" class="skill-tag clickable" data-tooltip="Click for details">
+                            <i class="fas fa-file-excel"></i> MS Excel
+                        </a>
+                        <a href="https://en.wikipedia.org/wiki/Extract,_transform,_load" target="_blank" class="skill-tag clickable" data-tooltip="Click for details">
+                            <i class="fas fa-exchange-alt"></i> ETL
+                        </a>
+                        <a href="https://www.tableau.com/" target="_blank" class="skill-tag clickable" data-tooltip="Click for details">
+                            <i class="fas fa-chart-pie"></i> Tableau
+                        </a>
+                        <a href="https://powerbi.microsoft.com/" target="_blank" class="skill-tag clickable" data-tooltip="Click for details">
+                            <i class="fas fa-chart-line"></i> PowerBI
+                        </a>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Development Tools</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <a href="https://code.visualstudio.com/" target="_blank" class="skill-tag clickable" data-tooltip="Click for details">
+                            <i class="fas fa-code"></i> VS Code
+                        </a>
+                        <a href="https://jupyterlab.readthedocs.io/" target="_blank" class="skill-tag clickable" data-tooltip="Click for details">
+                            <i class="fas fa-laptop-code"></i> Jupyter Lab
+                        </a>
+                        <a href="https://docs.conda.io/en/latest/miniconda.html" target="_blank" class="skill-tag clickable" data-tooltip="Click for details">
+                            <i class="fas fa-cube"></i> MiniConda
+                        </a>
+                        <a href="https://www.figma.com/" target="_blank" class="skill-tag clickable" data-tooltip="Click for details">
+                            <i class="fab fa-figma"></i> Figma
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projects</h2>
+                <p class="section-subtitle">Some of my recent work</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card glass">
+                    <div class="project-header">
+                        <h3>CLARITY</h3>
+                        <div class="project-status status--warning">
+                            <i class="fas fa-clock"></i>
+                            <span>In Progress</span>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Working with a team to develop a multimodal AI system for automated chest X-ray diagnosis using CNNs, RNNs, and Generative AI. Integrated disease prediction, radiology report generation, and visual explainability using Grad-CAM.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">CNNs</span>
+                        <span class="tech-tag">RNNs</span>
+                        <span class="tech-tag">Generative AI</span>
+                        <span class="tech-tag">Grad-CAM</span>
+                        <span class="tech-tag">Computer Vision</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/PavanDayanand/clarity" target="_blank" rel="noopener noreferrer" class="project-link github-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://drive.google.com/drive/folders/clarity-project" target="_blank" rel="noopener noreferrer" class="project-link drive-link">
+                            <i class="fab fa-google-drive"></i>
+                            <span>Drive</span>
+                        </a>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-year">April 2025 – Present</span>
+                        <span class="project-type">AI/Healthcare</span>
+                    </div>
+                </div>
+
+                <div class="project-card glass">
+                    <div class="project-header">
+                        <h3>EduGenie</h3>
+                        <div class="project-status status--success">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Completed</span>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Led the frontend development of an AI-powered result analysis tool using React.js, Tailwind CSS, and Figma for responsive UI design. Co-developed the backend by integrating FastAPI, LangChain, and Google Gemini API.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React.js</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">LangChain</span>
+                        <span class="tech-tag">Google Gemini API</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                        <span class="tech-tag">PyMuPDF</span>
+                        <span class="tech-tag">OCR</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/PavanDayanand/edugenie" target="_blank" rel="noopener noreferrer" class="project-link github-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://drive.google.com/drive/folders/edugenie-project" target="_blank" rel="noopener noreferrer" class="project-link drive-link">
+                            <i class="fab fa-google-drive"></i>
+                            <span>Drive</span>
+                        </a>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-year">March 2025 – May 2025</span>
+                        <span class="project-type">AI/Education</span>
+                    </div>
+                </div>
+
+                <div class="project-card glass">
+                    <div class="project-header">
+                        <h3>Efficient Diabetes Risk Prediction</h3>
+                        <div class="project-status status--success">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Completed</span>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Led a team to develop a machine learning-based diabetes risk prediction system using KNR and Random Forest, achieving 83% accuracy. Focused on feature selection, data preprocessing, and handling class imbalance.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                        <span class="tech-tag">Random Forest</span>
+                        <span class="tech-tag">KNN</span>
+                        <span class="tech-tag">NumPy</span>
+                        <span class="tech-tag">Pandas</span>
+                        <span class="tech-tag">Matplotlib</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/PavanDayanand/diabetes-prediction" target="_blank" rel="noopener noreferrer" class="project-link github-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://drive.google.com/drive/folders/diabetes-project" target="_blank" rel="noopener noreferrer" class="project-link drive-link">
+                            <i class="fab fa-google-drive"></i>
+                            <span>Drive</span>
+                        </a>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-year">November 2024 – December 2024</span>
+                        <span class="project-type">Healthcare ML</span>
+                    </div>
+                </div>
+
+                <div class="project-card glass">
+                    <div class="project-header">
+                        <h3>InterConnect</h3>
+                        <div class="project-status status--success">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Completed</span>
+                        </div>
+                    </div>
+                    <p class="project-description">
+                        Managed the design and storytelling in a 4-member team to build an interactive dashboard analyzing opinion gaps between Students, Faculty, and Clubs. Secured 2nd place in technical competition.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Power BI</span>
+                        <span class="tech-tag">BigQuery</span>
+                        <span class="tech-tag">ETL</span>
+                        <span class="tech-tag">Data Analysis</span>
+                        <span class="tech-tag">Dashboard Design</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/PavanDayanand/interconnect" target="_blank" rel="noopener noreferrer" class="project-link github-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://drive.google.com/drive/folders/interconnect-project" target="_blank" rel="noopener noreferrer" class="project-link drive-link">
+                            <i class="fab fa-google-drive"></i>
+                            <span>Drive</span>
+                        </a>
+                    </div>
+                    <div class="project-footer">
+                        <span class="project-year">October 2024 – December 2024</span>
+                        <span class="project-type">Data Analytics</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="achievements" class="achievements">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Achievements & Certifications</h2>
+                <p class="section-subtitle">Recognition and milestones</p>
+            </div>
+            <div class="achievements-grid">
+                <div class="achievement-card glass">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>2nd Place - IoT Project Exhibition</h3>
+                    <p>Recognition for outstanding project development in IoT domain</p>
+                    <span class="achievement-year">2024</span>
+                </div>
+                
+                <div class="achievement-card glass">
+                    <div class="achievement-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>2nd Place - Turn Data into Stories</h3>
+                    <p>InterConnect Project - Data visualization and storytelling excellence</p>
+                    <span class="achievement-year">December 2024</span>
+                </div>
+                
+                <div class="achievement-card glass">
+                    <div class="achievement-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>2nd Place - GenAI Project Exhibition</h3>
+                    <p>EduGenie Project - From Queries to Creativity with MongoDB & GenAI</p>
+                    <span class="achievement-year">2025</span>
+                </div>
+                
+                <div class="achievement-card glass">
+                    <div class="achievement-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>JNCIA-Cloud Certification</h3>
+                    <p>Juniper Networks Certified Associate, Cloud</p>
+                    <span class="achievement-year">2024</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="resume-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Download Resume</h2>
+            <p class="section-subtitle">Get my latest resume</p>
+        </div>
+        <div class="resume-card glass">
+            <div class="resume-content">
+                <div class="resume-icon">
+                    <i class="fas fa-file-pdf"></i>
+                </div>
+                <div class="resume-info">
+                    <h3>Pavan D - Resume</h3>
+                    <p>Data Scientist & AI Developer</p>
+                    <p class="resume-details">Updated September 2025 • PDF Format</p>
+                </div>
+                <a href="assets/Pavan_D.pdf" download="Pavan_D_Resume.pdf" class="btn btn--primary btn--lg download-btn" id="download-resume">
+                    <i class="fas fa-download"></i>
+                    Download Resume
+                </a>
+            </div>
+            <div class="resume-preview">
+                <p>📄 Comprehensive overview of my skills, projects, and achievements in Data Science and AI development.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's connect and collaborate</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form-container">
+                    <form class="contact-form glass" id="contact-form">
+    <div class="form-group">
+        <input type="text" name="user_name" class="form-control" placeholder="Your Name" required>
+    </div>
+    <div class="form-group">
+        <input type="email" name="user_email" class="form-control" placeholder="Your Email" required>
+    </div>
+    <div class="form-group">
+        <input type="text" name="subject" class="form-control" placeholder="Subject" required>
+    </div>
+    <div class="form-group">
+        <textarea name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+    </div>
+    <button type="submit" class="btn btn--primary btn--full-width">Send Message</button>
+</form>
+</div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>pavan.radapa@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 7204163730</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/pavan-d-856231259/" class="social-link linkedin" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/PavanDayanand" class="social-link github" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:pavan.radapa@gmail.com" class="social-link gmail" target="_blank">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="tel:+917204163730" class="social-link phone" target="_blank">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Pavan D. All rights reserved. Built with ❤️ using modern web technologies.</p>
+        </div>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("C5cqyI1LyIflKZ5aB"); 
+  })();
+</script>
+<script src="app.js"></script>
+</body>
+</html>
